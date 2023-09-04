@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Exercicio8 {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int number = input.nextInt();
+        int value = 2;
+        int divisor, i;
+
+        while(number > 0){
+            divisor = 0;
+
+            for(i = 1; i <= (value / 2) + 1; i++){
+
+                if((value % i) == 0)
+                    divisor += 1;
+            }
+
+            if(divisor == 1){
+                System.out.printf("%d é primo!\n", value);
+                number--;
+            }
+
+            value++;
+        }
+    }
+}
