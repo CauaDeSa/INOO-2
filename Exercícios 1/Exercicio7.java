@@ -6,39 +6,39 @@ public class Exercicio7 {
 
         Scanner input = new Scanner(System.in);
 
-        int H, P, F, D, i;
+        int Helicopter, Police, Fugitive, Direction;
 
-        H = input.nextInt();
+        Helicopter = input.nextInt();
 
-        P = input.nextInt();
+        Police = input.nextInt();
 
-        F = input.nextInt();
+        Fugitive = input.nextInt();
 
-        D = input.nextInt();
+        Direction = input.nextInt();
 
-        if(D == 1){
-            while(F != H && F != P){
-                if(F == 15)
-                    F = -1;
+        if(Direction == 1){
+            while(Fugitive != Helicopter && Fugitive != Police){
+                if(Fugitive == 15)
+                    Fugitive = -1;
 
-                System.out.printf("%d ", F);
-                F++;
+                System.out.printf("%d ", Fugitive);
+                Fugitive++;
             }
             System.out.printf("\n");
         }
         
         else{
-            while(F != H && F != P){
-                if(F == 0)
-                    F = 16;
+            while(Fugitive != Helicopter && Fugitive != Police){
+                if(Fugitive == 0)
+                    Fugitive = 16;
 
-                System.out.printf("%d ", F);
-                F--;
+                System.out.printf("%d ", Fugitive);
+                Fugitive--;
             }
             System.out.printf("\n");
         }
 
-        if(F == P)
+        if(Fugitive == Police)
             System.out.printf("N\n");
 
         else
