@@ -1,28 +1,46 @@
 public class USMoney {
-    int dollars, cents;
+    private int dollars, cents;
 
     public USMoney(int dollars, int cents) {
-        
-        while (cents > 99) {
-            dollars += 1;
-            cents -= 100;
+        if (dollars < 0) {
+            System.out.println("Invalid dollars value");
         }
 
-        this.dollars = dollars;
-        this.cents = cents;
+        else if (cents < 0) {
+            System.out.println("Invalid cents value");
+        }
+
+        else {
+            if (cents > 99) {
+                dollars += cents / 100;
+                cents = cents % 100;
+            }
+    
+            this.dollars = dollars;
+            this.cents = cents;
+        }
     }
 
-    public void plus(USMoney bancoB) {
+    public int getDollars() {
+        return dollars;
+    }
+
+    public int getCents() {
+        return cents;
+    }
+
+    public USMoney plus(USMoney bankB) {
         int dollars, cents;
         
-        dollars = bancoB.dollars + this.dollars;
-        cents = bancoB.cents + this.cents;
+        dollars = bankB.getDollars() + this.getDollars();
+        cents = bankB.getCents() + this.getCents();
         
-        while (cents > 99) {
-            dollars += 1;
-            cents -= 100;
+        if (cents > 99) {
+            dollars += cents / 100;
+            cents = cents % 100;
         }
 
-        System.out.println("$" + dollars + "," + cents + "\n");
+        USMoney bankC = new USMoney(dollars, cents);
+        return bankC;
     }
 }
