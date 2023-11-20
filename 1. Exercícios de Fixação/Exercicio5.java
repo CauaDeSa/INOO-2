@@ -4,7 +4,7 @@ public class Exercicio5 {
 
     public static void main(String[] args) {
         int numbersQuantity, next, frequency = 0, number = 0;
-
+        
         Scanner input = new Scanner(System.in);
         numbersQuantity = input.nextInt();
 
