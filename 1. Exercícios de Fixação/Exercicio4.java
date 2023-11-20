@@ -8,7 +8,6 @@ public class Exercicio4{
         int bigger = 0, minor = 0;
 
         for(int i = 0; i < 20; i++){
-
             Scanner input = new Scanner(System.in);
             array[i] = input.nextInt();
             
