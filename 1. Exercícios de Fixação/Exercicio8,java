@@ -13,7 +13,6 @@ public class Exercicio8 {
             divisor = 0;
 
             for(int i = 1; i <= (testCase / 2) + 1 && divisor != 2; i++){
-
                 if((testCase % i) == 0)
                     divisor += 1;
             }
