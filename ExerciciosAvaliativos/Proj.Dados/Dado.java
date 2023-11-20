@@ -3,11 +3,14 @@ import java.util.Random;
 public class Dado {
     
     Random generator = new Random();
-    int result;
+    int value;
 
     public int Dado(){
-        result = generator.nextInt(6) + 1;
-        
-        return result;
+        value = 0;
+    }
+
+    public int jogar(){
+        value = generator.nextInt(6) + 1;
+        return value;
     }
 }

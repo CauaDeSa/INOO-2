@@ -1,8 +1,8 @@
 public class Triangulo {
 
-    private float lado1, lado2, lado3;
+    private int lado1, lado2, lado3;
 
-    public Triangulo (float lado1, float lado2, float lado3) {
+    public Triangulo (int lado1, int lado2, int lado3) {
         
         this.lado1 = lado1;
         this.lado2 = lado2;

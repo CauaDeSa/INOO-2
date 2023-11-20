@@ -6,31 +6,31 @@ public class ClientCode {
         Scanner scanner = new Scanner(System.in);
         Triangulo triangulo;
 
-        float a, b, c;
-
-        triangulo = new Triangulo(a, b, c);
+        int a, b, c;
 
         for (int i = 0; i != 5; i++) {
             System.out.println("Digite os três lados: ");
 
-            a = scanner.nextFloat();
-            b = scanner.nextFloat();
-            c = scanner.nextFloat();
+            a = scanner.nextInt();
+            b = scanner.nextInt();
+            c = scanner.nextInt();
+
+            triangulo = new Triangulo(a, b, c);
 
             if (triangulo.isEscaleno()) {
-                System.out.println("É escaleno!");
+                System.out.println("\nÉ escaleno!\n");
             }
 
             else if (triangulo.isEquilatero()) {
-                System.out.println("É equilátero!");
+                System.out.println("\nÉ equilátero!\n");
             }
 
             else if (triangulo.isIsoceles()) {
-                System.out.println("É isoceles");
+                System.out.println("\nÉ isoceles!\n");
             }
 
             else{
-                System.out.println("Não é um triângulo válido!");
+                System.out.println("\nNão é um triângulo válido!\n");
             }
         }
     }
