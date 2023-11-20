@@ -3,17 +3,12 @@ import java.util.Scanner;
 public class Exercicio7 {
 
     public static void main(String[] args) {
-
         Scanner input = new Scanner(System.in);
-
         int Helicopter, Police, Fugitive, Direction;
 
         Helicopter = input.nextInt();
-
         Police = input.nextInt();
-
         Fugitive = input.nextInt();
-
         Direction = input.nextInt();
 
         if(Direction == 1){
