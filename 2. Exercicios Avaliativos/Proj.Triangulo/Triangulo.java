@@ -7,7 +7,6 @@ public class Triangulo {
         this.lado1 = lado1;
         this.lado2 = lado2;
         this.lado3 = lado3;   
-
     }
 
     private boolean isTriangulo(){
