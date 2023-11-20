@@ -9,9 +9,7 @@ public class Exercicio6 {
         lines = input.nextInt();
 
         for(int j = 0; j < lines; j++){
-
             for(int i = 0; i < count; i++){
-                
                 if(i == 0)
                     System.out.printf("%d", value++);
                 
