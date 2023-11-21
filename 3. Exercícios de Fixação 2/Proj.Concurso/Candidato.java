@@ -8,17 +8,17 @@ public class Candidato{
     private int notaEntrevista;
 
     public Candidato(String nome){
-        setNome(nome);
-        setNotaTeorica(0);
-        setNotaPratica(0);
-        setNotaEntrevista(0);
+        this.nome = nome;
+        this.notaTeorica = 0;
+        this.notaPratica = 0;
+        this.notaEntrevista = 0;
     }
 
     public Candidato(String nome, int notaTeorica, int notaPratica, int notaEntrevista){
-        setNome(nome);
-        setNotaTeorica(notaTeorica);
-        setNotaPratica(notaPratica);
-        setNotaEntrevista(notaEntrevista);
+        this.nome = nome;
+        this.notaTeorica = notaTeorica;
+        this.notaPratica = notaPratica;
+        this.notaEntrevista = notaEntrevista;
     }
 
     public void setNome(String nome){

@@ -5,8 +5,8 @@ public class Cidade {
 
     public Cidade(String nome, int populacaoAtual, double taxaCrescimento) {
         this.nome = nome;
-        setPopulacaoAtual(populacaoAtual);
-        setTaxaCrescimento(taxaCrescimento);
+        this.populacaoAtual = populacaoAtual;
+        this.taxaCrescimento = taxaCrescimento;
     }
 
     public void setTaxaCrescimento(double taxaCrescimento) {
