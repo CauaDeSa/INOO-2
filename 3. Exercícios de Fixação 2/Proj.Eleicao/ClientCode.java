@@ -11,7 +11,7 @@ public class ClientCode {
         int nulo = 0;
 
         do {
-            System.out.prinln("Digite o código do candidato: ");
+            System.out.println("Digite o código do candidato: ");
             int voto = scan.nextInt();
 
             if (voto == c1.getCodigo()) {
@@ -32,9 +32,9 @@ public class ClientCode {
         } while (scan.nextInt() == 1);
 
         System.out.println("Quantidade de votos:");
-        System.out.println(c1.toString);
-        System.out.println(c2.toString);
-        System.out.println(c3.toString);
+        System.out.println(c1.toString());
+        System.out.println(c2.toString());
+        System.out.println(c3.toString());
         System.out.println("Nulos: " + nulo);
         System.out.println("Brancos: " + branco);
     }

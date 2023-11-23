@@ -15,11 +15,11 @@ public class Carta {
         this.naipe = define(naipe);
     }
 
-    public int getNumero() {
-        return numero;
+    public Value getNumero() {
+        return value;
     }
 
-    public String getNaipe() {
+    public Naipe getNaipe() {
         return naipe;
     }
 
@@ -31,50 +31,50 @@ public class Carta {
         this.naipe = define(naipe);
     }
 
-    public static Value define(String arg){
-        if(arg.equals(1))
+    public static Value define(int arg){
+        if(arg == 1)
             return Value.UM;
-        else if(arg.equals(2))
+        else if(arg == 2)
             return Value.DOIS;
-        else if(arg.equals(3))
+        else if(arg == 3)
             return Value.TRES;
-        else if(arg.equals(4))
+        else if(arg == 4)
             return Value.QUATRO;
-        else if(arg.equals(5))
+        else if(arg == 5)
             return Value.CINCO;
-        else if(arg.equals(6))
+        else if(arg == 6)
             return Value.SEIS;
-        else if(arg.equals(7))
+        else if(arg == 7)
             return Value.SETE;
-        else if(arg.equals(8))
+        else if(arg == 8)
             return Value.OITO;
-        else if(arg.equals(9))
+        else if(arg == 9)
             return Value.NOVE;
-        else if(arg.equals(10))
+        else if(arg == 10)
             return Value.DEZ;
-        else if(arg.equals(11))
+        else if(arg == 11)
             return Value.VALETE;
-        else if(arg.equals(12))
+        else if(arg == 12)
             return Value.DAMA;
-        else if(arg.equals(13))
+        else if(arg == 13)
             return Value.REI;
         return null;
     }
 
-    public static Naipe define(int arg){
-        if(arg.equals(1))
+    public static Naipe define(String arg){
+        if(arg.toUpperCase().equals("COPAS"))
             return Naipe.COPAS;
-        else if(arg.equals(2))
+        else if(arg.toUpperCase().equals("OURO"))
             return Naipe.OURO;
-        else if(arg.equals(3))
+        else if(arg.toUpperCase().equals("PAUS"))
             return Naipe.PAUS;
-        else if(arg.equals(4))
+        else if(arg.toUpperCase().equals("ESPADA"))
             return Naipe.ESPADA;
         return null;
     }
 
     @Override
     public String toString() {
-        return numero + " de " + naipe;
+        return value + " de " + naipe;
     }
 }

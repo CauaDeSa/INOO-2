@@ -16,7 +16,7 @@ public class Exercicio5 {
                 frequency = 0;
             }
 
-            if(next = number)
+            if(next == number)
                 frequency++;
         }
 
